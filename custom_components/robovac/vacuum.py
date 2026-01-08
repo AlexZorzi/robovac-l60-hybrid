@@ -27,6 +27,7 @@ import ast
 from typing import Any
 from enum import IntEnum, StrEnum
 from homeassistant.loader import bind_hass
+from homeassistant.components.vacuum import StateVacuumEntity
 #from homeassistant.components.vacuum import (
 #    StateVacuumEntity,
 #    STATE_CLEANING,
