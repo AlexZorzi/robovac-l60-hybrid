@@ -275,7 +275,6 @@ class RoboVacEntity(StateVacuumEntity):
     @property
     def activity(self) -> VacuumActivity | None:
         """Return the state of the vacuum."""
-        self.update_entity_values()
         if self.tuya_state is None:
             return VacuumActivity.ERROR
         elif (
